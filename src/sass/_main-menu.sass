@@ -17,6 +17,8 @@
   height: 78px
   display: flex
   flex-direction: row
+  +r(900)
+    display: none
 
   &__list
     display: flex
@@ -35,9 +37,122 @@
     font-size: 14px
     transition: color .3s
     box-sizing: border-box
+    +r(1280)
+      padding: 0 10px
 
     &:hover
       font-family: "Gotham Book", Arial, sans-serif
       color: $greyDark
 
+.mobile-menu
+  width: 100%
+  position: fixed
+  top: -500px
+  left: 0
+  background: #fff
+  box-sizing: border-box
+  border: solid 1px #dadee6
+  border-bottom: 0
+  transition: all 0.4s
+  opacity: 0
+  z-index: 1
+  +r(900)
+    opacity: 1
 
+.mobile-menu
+  li a
+    height: 77px
+    box-sizing: border-box
+    border-bottom: solid 1px #dadee6
+    display: block
+    padding-left: 14px
+    font-size: 18px
+    color: #2f3641
+    text-transform: uppercase
+    text-decoration: none
+    line-height: 79px
+    &:hover
+      font-weight: 600
+    &.cont
+      transition: all 0.3s
+      &.show
+        background: #e6ebf1
+        color: #2f3641
+      &::before
+        content: ''
+        width: 14px
+        height: 9px
+        position: absolute
+        top: 50%
+        margin-top: -4.5px
+        right: 25px
+        background: url(../images/open-sub.png) no-repeat
+        transition: all 0.3s
+      &.show::before
+        transform: rotateZ(180deg)
+        -webkit-transform: rotateZ(180deg)
+        -moz-transform: rotateZ(180deg)
+  .sub
+    height: 0
+    overflow: hidden
+    li a
+      font-size: 14px
+      color: #75858f
+      text-transform: initial
+      padding-left: 29px
+
+.menu-but
+  position: absolute
+  right: 20px
+  top: -50px
+  width: 32px
+  height: 29px
+  opacity: 0
+  transition: opacity 0.3s
+  cursor: pointer
+  perspective: 800px
+  +r(900)
+    opacity: 1
+    top: 30px
+
+  .open
+    background: url(../img/menu-but.jpg) no-repeat
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    transition: transform 0.3s
+    transform: rotateY(0deg)
+    -webkit-transform: rotateY(0deg)
+    -moz-transform: rotateY(0deg)
+    width: 32px
+    height: 29px
+    position: absolute
+    top: 0
+    left: 0
+  .close
+    background: url(../img/menu-close.jpg) no-repeat
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg)
+    -moz-transform: rotateY(180deg)
+    transition: transform 0.3s
+    width: 32px
+    height: 29px
+    position: absolute
+    top: 0
+    left: 0
+  &.show
+    .open
+      background: url(../img/menu-but.jpg) no-repeat
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      transform: rotateY(180deg)
+      -webkit-transform: rotateY(180deg)
+      -moz-transform: rotateY(180deg)
+    .close
+      background: url(../images/menu-close.jpg) no-repeat
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      transform: rotateY(0deg)
+      -webkit-transform: rotateY(0deg)
+      -moz-transform: rotateY(0deg)

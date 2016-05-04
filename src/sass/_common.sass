@@ -65,16 +65,29 @@ body
   margin: 0 auto
   padding: 0 20px
   box-sizing: border-box
+  +r(1280)
+    max-width: 1070px
+
+  +r(1100)
+    max-width: 970px
 
 .contact
   background-color: #eaedee
-  padding-top: 72px
-  padding-bottom: 82px
+  padding-top: 70px
+  padding-bottom: 80px
+  +r(900)
+    padding-top: 30px
+    padding-bottom: 10px
+    
+  +r(539)
+    text-align: center
 
   &__wrap
     display: flex
     flex-direction: row
     justify-content: space-around
+    +r(1100)
+      flex-wrap: wrap
 
 a
   text-decoration: none
@@ -84,6 +97,8 @@ a
   padding: 16px 0
 
 .actions
+  +r(900)
+    display: none
 
   &__list
     display: flex
@@ -99,6 +114,8 @@ a
     font-size: 14px
 
 .about
+  +r(650)
+    margin-bottom: 12px
 
   &__list
     display: flex
@@ -142,6 +159,8 @@ a
 
 .col
   width: 250px
+  +r(1100)
+    margin-bottom: 35px
   a
     font-family: "Gotham-Medium", Arial, sans-serif
     color: $blue
@@ -151,7 +170,7 @@ a
     text-transform: uppercase
 
   h5
-    margin-bottom: 10px
+    margin: 10px 0
 
   h6
     margin-bottom: 5px
@@ -160,6 +179,8 @@ a
   width: 100%
   background: url("../img/header-bg.png") top center no-repeat
   background-size: cover
+  +r(900)
+    text-align: center
 
   h1
     font-weight: 100
@@ -167,10 +188,15 @@ a
     font-family: "Gotham Light", Arial, sans-serif
     padding: 234px 0
     color: #fff
+    +r(900)
+      padding: 70px 0 235px
+      font-size: 40px
 
 .info
   padding: 100px 0
   background-color: #fff
+  +r(900)
+    padding: 50px 0 0
   
   &__strong
     font-size: 18px
@@ -190,9 +216,19 @@ a
   &__col
     margin-bottom: 10px
     width: 50%
+    +r(900)
+      width: 100%
+      text-align: center
+      margin-bottom: 30px
+
+    img
+      +r(1100)
+        max-width: 350px
 
     &_right
       text-align: right
+      +r(900)
+        display: none
 
     &_center
       text-align: center
@@ -206,9 +242,14 @@ a
 .figure-group
   display: flex
   justify-content: space-between
+  +r(650)
+    flex-wrap: wrap
 
 .figure
   text-transform: uppercase
+  +r(650)
+    flex-basis: 100%
+    margin-bottom: 30px
 
   &__strong
     color: $black
