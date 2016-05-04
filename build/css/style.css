@@ -19,50 +19,73 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
-@font-face { font-family: "Helvetica Neue"; src: url("fonts/HelveticaNeue.eot"); src: url("fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue.woff2") format("woff2"), url("fonts/HelveticaNeue.woff") format("woff"), url("fonts/HelveticaNeue.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Helvetica Neue L"; src: url("fonts/HelveticaNeueL.eot"); src: url("fonts/HelveticaNeueL.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueL.woff2") format("woff2"), url("fonts/HelveticaNeueL.woff") format("woff"), url("fonts/HelveticaNeueL.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Helvetica Neue LTStdBd"; src: url("fonts/HelveticaNeueLTStdBd.eot"); src: url("fonts/HelveticaNeueLTStdBd.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdBd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdBd.woff") format("woff"), url("fonts/HelveticaNeueLTStdBd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Helvetica Neue LTStdMd"; src: url("fonts/HelveticaNeueLTStdMd.eot"); src: url("fonts/HelveticaNeueLTStdMd.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdMd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdMd.woff") format("woff"), url("fonts/HelveticaNeueLTStdMd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Helvetica Neue LTStdRoman"; src: url("fonts/HelveticaNeueLTStdRoman.eot"); src: url("fonts/HelveticaNeueLTStdRoman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdRoman.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdRoman.woff") format("woff"), url("fonts/HelveticaNeueLTStdRoman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-h1 { font-size: 54px; }
+@font-face { font-family: "Gotham Book"; src: url("fonts/Gotham-Book.eot"); src: url("fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Book.woff2") format("woff2"), url("fonts/Gotham-Book.woff") format("woff"), url("fonts/Gotham-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Gotham Light"; src: url("fonts/Gotham-Light.eot"); src: url("fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Light.woff2") format("woff2"), url("fonts/Gotham-Light.woff") format("woff"), url("fonts/Gotham-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Gotham-Medium"; src: url("fonts/Gotham-Medium.eot"); src: url("fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Medium.woff2") format("woff2"), url("fonts/Gotham-Medium.woff") format("woff"), url("fonts/Gotham-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+h2 { font-size: 48px; }
 
-h4 { font-size: 21px; }
+h3 { font-size: 26px; }
 
-h6 { font-family: "Helvetica Neue L", Arial, sans-serif; font-size: 13px; }
+h5 { font-size: 16px; }
 
-body { font-family: "Helvetica Neue", Arial, sans-serif; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; color: #75858f; min-height: 100%; }
+h6 { font-size: 13px; }
 
-a { text-decoration: none; color: #000; }
+body { font-family: "Gotham Light", Arial, sans-serif; font-size: 14px; line-height: 1.4; padding-top: 78px; color: #526f78; min-height: 100%; background-color: #ccc; }
 
-.container { min-width: 1440px; min-height: 100%; }
+.container { width: 100%; min-width: 320px; max-width: 1210px; margin: 0 auto; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.out { min-height: 100%; }
+.contact { background-color: #eaedee; padding-top: 72px; padding-bottom: 82px; }
+.contact__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.green { color: #4cddac; }
+a { text-decoration: none; color: #ccc; }
 
-.pink { color: #f84a75; }
+.logo { padding: 16px 0; }
 
-.grey { color: #ccc; }
+.actions__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.actions__el { margin-left: 15px; }
+.actions__link { color: #75858f; text-transform: uppercase; font-size: 14px; }
 
-.grey-dark { color: #75858f; }
+.about__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+.about__el { margin-right: 16px; }
+.about__link { font-family: "Gotham-Medium", Arial, sans-serif; font-size: 16px; }
+.about__link:hover { text-decoration: underline; }
 
-.logo { width: 92px; }
-.logo img { width: 100%; }
+.ico { display: inline-block; }
+.ico_in { background-image: url("../img/ico-in.png"); width: 22px; height: 22px; }
+.ico_fb { background-image: url("../img/ico-fb.png"); width: 22px; height: 22px; }
 
-.comparison { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-.comparison__text { margin: 0 12px; }
+.copyright__text { margin-right: 15px; }
+.copyright__link { font-family: "Gotham-Medium", Arial, sans-serif; }
+.copyright__link:hover { text-decoration: underline; }
 
-.content-title { font-family: "Helvetica Neue L", Arial, sans-serif; padding: 10px 0; color: #75858f; }
+.col { width: 250px; }
+.col a { font-family: "Gotham-Medium", Arial, sans-serif; color: #07cfd6; }
+.col h6, .col h5 { color: #2f3641; text-transform: uppercase; }
+.col h5 { margin-bottom: 10px; }
+.col h6 { margin-bottom: 5px; }
 
-.events { margin: 20px; }
-.events__el { display: inline-block; }
+.header { width: 100%; background: url("../img/header-bg.png") top center no-repeat; background-size: cover; }
+.header h1 { font-weight: 100; font-size: 62px; font-family: "Gotham Light", Arial, sans-serif; padding: 234px 0; color: #fff; }
 
-.img-box { margin-left: 8px; width: 36px; height: 36px; background-image: url("../img/img-desktop.jpg"); background-size: cover; }
+.footer { padding-top: 50px; padding-bottom: 89px; width: 100%; background-color: #2f3641; }
+.footer__top { text-align: center; margin-bottom: 48px; }
+.footer__bottom { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
-.nav__text { padding: 2px 14px; -webkit-border-radius: 16px; border-radius: 16px; text-align: center; font-size: 14px; letter-spacing: 0.4px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; opacity: 0.5; }
-.nav__text:hover { background-color: #e9e8e8; cursor: pointer; }
-.nav .is-active { opacity: 1; background-color: #e9e8e8; }
+.main-menu { width: 100%; height: 78px; position: fixed; top: 0; left: 0; z-index: 2; background-color: #fff; }
+.main-menu__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.menu { height: 78px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.menu__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.menu__el { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.menu__link { display: block; padding: 0 17px; line-height: 78px; text-align: center; color: #75858f; text-transform: uppercase; font-size: 14px; -webkit-transition: color 0.3s; transition: color 0.3s; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.menu__link:hover { font-family: "Gotham-Medium", Arial, sans-serif; color: #526f78; }
+
+.btn { display: inline-block; position: relative; text-transform: uppercase; font-size: 14px; -webkit-border-radius: 16px; border-radius: 16px; cursor: pointer; }
+.btn:hover { font-family: "Gotham-Medium", Arial, sans-serif; color: #526f78; }
+.btn_blue { font-size: 13px; color: #fff; height: 32px; line-height: 32px; padding: 0 15px; background-color: #07cfd6; }
+.btn_blue:hover { color: #fff; font-weight: normal; }
+.btn_big { width: 363px; font-family: "Gotham-Medium", Arial, sans-serif; font-size: 20px; height: 69px; line-height: 69px; -webkit-border-radius: 34px; border-radius: 34px; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.btn_big:hover { background-color: #079fd6; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
  * { -webkit-text-size-adjust: none; } }

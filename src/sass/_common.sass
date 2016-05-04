@@ -28,126 +28,146 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
-$pink: #f84a75
-$grey: #e9e8e8
-$greyDark: #75858f
-$darkBlue: #3e485a
-$green: #4cddac
+$grey: #75858f
+$greyDark: #526f78
+$black: #2f3641
+$blue: #07cfd6
+$blueDark: #079fd6
 
-+font('Helvetica Neue', HelveticaNeue)
-+font('Helvetica Neue L', HelveticaNeueL)
-+font('Helvetica Neue LTStdBd', HelveticaNeueLTStdBd)
-+font('Helvetica Neue LTStdMd', HelveticaNeueLTStdMd)
-+font('Helvetica Neue LTStdRoman', HelveticaNeueLTStdRoman)
++font('Gotham Book', Gotham-Book)
++font('Gotham Light', Gotham-Light)
++font('Gotham-Medium', Gotham-Medium)
 
-=h100
-  font-family: "Helvetica Neue L", Arial, sans-serif
+h2
+  font-size: 48px
 
-=h200
-  font-family: "Helvetica Neue LTStdRoman", Arial, sans-serif
+h3
+  font-size: 26px
 
-=h300
-  font-family: "Helvetica Neue", Arial, sans-serif
-
-=h400
-  font-family: "Helvetica Neue LTStdMd", Arial, sans-serif
-
-=h500
-  font-family: "Helvetica Neue LTStdBd", Arial, sans-serif
-
-h1
-  font-size: 54px
-
-h4
-  font-size: 21px
+h5
+  font-size: 16px
 
 h6
-  +h100
   font-size: 13px
 
 body
-  +h300
-  font-family: Arial, sans-serif
+  font-family: 'Gotham Light', Arial, sans-serif
   font-size: 14px
   line-height: 1.4
+  padding-top: 78px
   color: $greyDark
   min-height: 100%
+  background-color: #ccc
+
+.container
+  width: 100%
+  min-width: 320px
+  max-width: 1210px
+  margin: 0 auto
+  padding: 0 20px
+  box-sizing: border-box
+
+.contact
+  background-color: #eaedee
+  padding-top: 72px
+  padding-bottom: 82px
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
 
 a
   text-decoration: none
-  color: #000
-
-.container
-  min-width: 1440px
-  min-height: 100%
-
-.out
-  min-height: 100%
-
-
-.green
-  color: $green
-
-.pink
-  color: $pink
-
-.grey
   color: #ccc
 
-.grey-dark
-  color: $greyDark
-
 .logo
-  width: 92px
+  padding: 16px 0
 
-  img
-    width: 100%
-
-.comparison
-  display: flex
-  flex-direction: row
-  align-items: center
-
-  &__text
-    margin: 0 12px
-
-.content-title
-  +h100
-  padding: 10px 0
-  color: $greyDark
-
-.events
-  margin: 20px
+.actions
 
   &__list
+    display: flex
+    flex-direction: row
+    align-items: center
 
   &__el
-    display: inline-block
+    margin-left: 15px
 
-.img-box
-  margin-left: 8px
-  width: 36px
-  height: 36px
-  background-image: url("../img/img-desktop.jpg")
-  background-size: cover
+  &__link
+    color: $grey
+    text-transform: uppercase
+    font-size: 14px
 
-.nav
-  display: flex
-  flex-direction: row
+.about
+
+  &__list
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+
+
+  &__el
+    margin-right: 16px
+
+  &__link
+    font-family: "Gotham-Medium", Arial, sans-serif
+    font-size: 16px
+
+    &:hover
+      text-decoration: underline
+
+.ico
+  display: inline-block
+
+  &_in
+    background-image: url("../img/ico-in.png")
+    width: 22px
+    height: 22px
+
+  &_fb
+    background-image: url("../img/ico-fb.png")
+    width: 22px
+    height: 22px
+
+.copyright
 
   &__text
-    padding: 2px 14px
-    border-radius: 16px
-    text-align: center
-    font-size: 14px
-    letter-spacing: .4px
-    cursor: pointer
-    user-select: none
-    opacity: .5
-    &:hover
-      background-color: $grey
-      cursor: pointer
+    margin-right: 15px
 
-  .is-active
-    opacity: 1
-    background-color: $grey
+  &__link
+    font-family: "Gotham-Medium", Arial, sans-serif
+
+    &:hover
+      text-decoration: underline
+
+.col
+  width: 250px
+  a
+    font-family: "Gotham-Medium", Arial, sans-serif
+    color: $blue
+
+  h6, h5
+    color: $black
+    text-transform: uppercase
+
+  h5
+    margin-bottom: 10px
+
+  h6
+    margin-bottom: 5px
+
+.header
+  width: 100%
+  background: url("../img/header-bg.png") top center no-repeat
+  background-size: cover
+
+  h1
+    font-weight: 100
+    font-size: 62px
+    font-family: "Gotham Light", Arial, sans-serif
+    padding: 234px 0
+    color: #fff
+
+
+
