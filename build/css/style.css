@@ -74,13 +74,13 @@ a { text-decoration: none; color: #ccc; }
 .info__col { margin-bottom: 10px; width: 50%; }
 .info__col_right { text-align: right; }
 .info__col_center { text-align: center; }
-.info__title { font-size: 26px; text-transform: uppercase; color: #2f3641; }
+.info__title { margin-bottom: 15px; font-size: 26px; text-transform: uppercase; color: #2f3641; }
 
 .figure-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 .figure { text-transform: uppercase; }
 .figure__strong { color: #2f3641; font-family: "Gotham-Medium", Arial, sans-serif; }
-.figure__ico { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+.figure__ico { margin-bottom: 10px; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
 .footer { padding-top: 50px; padding-bottom: 89px; width: 100%; background-color: #2f3641; }
 .footer__top { text-align: center; margin-bottom: 48px; }
