@@ -57,7 +57,6 @@ body
   padding-top: 78px
   color: $greyDark
   min-height: 100%
-  background-color: #ccc
 
 .container
   width: 100%
@@ -169,5 +168,50 @@ a
     padding: 234px 0
     color: #fff
 
+.info
+  padding: 100px 0
+  background-color: #fff
+  
+  &__strong
+    font-size: 18px
+    font-family: "Gotham Book", Arial, sans-serif
+    color: $black
+    margin-bottom: 20px
+    
+  &__descr
+    font-size: 16px
+    color: $greyDark
 
+  &__wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
 
+  &__col
+    margin-bottom: 10px
+    width: 50%
+
+    &_right
+      text-align: right
+
+    &_center
+      text-align: center
+
+  &__title
+    font-size: 26px
+    text-transform: uppercase
+    color: $black
+
+.figure-group
+  display: flex
+  justify-content: space-between
+
+.figure
+  text-transform: uppercase
+
+  &__strong
+    color: $black
+    font-family: "Gotham-Medium", Arial, sans-serif
+
+  &__ico
+    filter: grayscale(100%)
