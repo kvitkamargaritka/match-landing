@@ -1,0 +1,72 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+@font-face { font-family: "Helvetica Neue"; src: url("fonts/HelveticaNeue.eot"); src: url("fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue.woff2") format("woff2"), url("fonts/HelveticaNeue.woff") format("woff"), url("fonts/HelveticaNeue.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Helvetica Neue L"; src: url("fonts/HelveticaNeueL.eot"); src: url("fonts/HelveticaNeueL.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueL.woff2") format("woff2"), url("fonts/HelveticaNeueL.woff") format("woff"), url("fonts/HelveticaNeueL.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Helvetica Neue LTStdBd"; src: url("fonts/HelveticaNeueLTStdBd.eot"); src: url("fonts/HelveticaNeueLTStdBd.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdBd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdBd.woff") format("woff"), url("fonts/HelveticaNeueLTStdBd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Helvetica Neue LTStdMd"; src: url("fonts/HelveticaNeueLTStdMd.eot"); src: url("fonts/HelveticaNeueLTStdMd.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdMd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdMd.woff") format("woff"), url("fonts/HelveticaNeueLTStdMd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Helvetica Neue LTStdRoman"; src: url("fonts/HelveticaNeueLTStdRoman.eot"); src: url("fonts/HelveticaNeueLTStdRoman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLTStdRoman.woff2") format("woff2"), url("fonts/HelveticaNeueLTStdRoman.woff") format("woff"), url("fonts/HelveticaNeueLTStdRoman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+h1 { font-size: 54px; }
+
+h4 { font-size: 21px; }
+
+h6 { font-family: "Helvetica Neue L", Arial, sans-serif; font-size: 13px; }
+
+body { font-family: "Helvetica Neue", Arial, sans-serif; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; color: #75858f; min-height: 100%; }
+
+a { text-decoration: none; color: #000; }
+
+.container { min-width: 1440px; min-height: 100%; }
+
+.out { min-height: 100%; }
+
+.green { color: #4cddac; }
+
+.pink { color: #f84a75; }
+
+.grey { color: #ccc; }
+
+.grey-dark { color: #75858f; }
+
+.logo { width: 92px; }
+.logo img { width: 100%; }
+
+.comparison { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.comparison__text { margin: 0 12px; }
+
+.content-title { font-family: "Helvetica Neue L", Arial, sans-serif; padding: 10px 0; color: #75858f; }
+
+.events { margin: 20px; }
+.events__el { display: inline-block; }
+
+.img-box { margin-left: 8px; width: 36px; height: 36px; background-image: url("../img/img-desktop.jpg"); background-size: cover; }
+
+.nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.nav__text { padding: 2px 14px; -webkit-border-radius: 16px; border-radius: 16px; text-align: center; font-size: 14px; letter-spacing: 0.4px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; opacity: 0.5; }
+.nav__text:hover { background-color: #e9e8e8; cursor: pointer; }
+.nav .is-active { opacity: 1; background-color: #e9e8e8; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+ * { -webkit-text-size-adjust: none; } }
+
+
+
+/*# sourceMappingURL=style.css.map */
