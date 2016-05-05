@@ -165,7 +165,7 @@ a { text-decoration: none; color: #ccc; }
  .figure { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 30px; } }
 @media only screen and (max-width: 550px) {
 
- .btn_big { max-width: 363px; } }
+ .btn_big { max-width: 275px; } }
 @media only screen and (max-width: 539px) {
 
  .contact { text-align: center; } }
