@@ -95,11 +95,11 @@ a { text-decoration: none; color: #ccc; }
 
 .mobile-menu { width: 100%; position: fixed; top: -500px; left: 0; background: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 1px #dadee6; border-bottom: 0; -webkit-transition: all 0.4s; transition: all 0.4s; opacity: 0; z-index: 1; }
 
-.mobile-menu li a { height: 77px; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: solid 1px #dadee6; display: block; padding-left: 14px; font-size: 18px; color: #2f3641; text-transform: uppercase; text-decoration: none; line-height: 79px; }
+.mobile-menu li a { position: relative; height: 77px; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: solid 1px #dadee6; display: block; padding-left: 14px; font-size: 18px; color: #2f3641; text-transform: uppercase; text-decoration: none; line-height: 79px; }
 .mobile-menu li a:hover { font-weight: 600; }
 .mobile-menu li a.cont { -webkit-transition: all 0.3s; transition: all 0.3s; }
 .mobile-menu li a.cont.show { background: #e6ebf1; color: #2f3641; }
-.mobile-menu li a.cont::before { content: ""; width: 14px; height: 9px; position: absolute; top: 50%; margin-top: -4.5px; right: 25px; background: url(../images/open-sub.png) no-repeat; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.mobile-menu li a.cont::before { content: ""; width: 14px; height: 9px; position: absolute; top: 50%; margin-top: -4.5px; right: 25px; background: url(../img/open-sub.png) no-repeat; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .mobile-menu li a.cont.show::before { transform: rotateZ(180deg); -webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); }
 .mobile-menu .sub { height: 0; overflow: hidden; }
 .mobile-menu .sub li a { font-size: 14px; color: #75858f; text-transform: initial; padding-left: 29px; }
@@ -108,13 +108,15 @@ a { text-decoration: none; color: #ccc; }
 .menu-but .open { background: url(../img/menu-but.jpg) no-repeat; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); width: 32px; height: 29px; position: absolute; top: 0; left: 0; }
 .menu-but .close { background: url(../img/menu-close.jpg) no-repeat; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; width: 32px; height: 29px; position: absolute; top: 0; left: 0; }
 .menu-but.show .open { background: url(../img/menu-but.jpg) no-repeat; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
-.menu-but.show .close { background: url(../images/menu-close.jpg) no-repeat; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); }
+.menu-but.show .close { background: url(../img/menu-close.jpg) no-repeat; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); }
+
+.mobile-menu.show { top: 78px; opacity: 1; }
 
 .btn { display: inline-block; position: relative; text-transform: uppercase; font-size: 14px; -webkit-border-radius: 16px; border-radius: 16px; cursor: pointer; }
 .btn:hover { font-family: "Gotham Book", Arial, sans-serif; color: #526f78; }
 .btn_blue { font-size: 13px; color: #fff; height: 32px; line-height: 32px; padding: 0 15px; background-color: #07cfd6; }
 .btn_blue:hover { font-family: "Gotham Light", Arial, sans-serif; color: #fff; }
-.btn_big { max-width: 363px; font-family: "Gotham-Medium", Arial, sans-serif; font-size: 20px; height: 69px; line-height: 69px; -webkit-border-radius: 34px; border-radius: 34px; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.btn_big { width: 363px; font-family: "Gotham-Medium", Arial, sans-serif; font-size: 20px; height: 69px; line-height: 69px; -webkit-border-radius: 34px; border-radius: 34px; -webkit-transition: background 0.3s; transition: background 0.3s; }
 .btn_big:hover { font-family: "Gotham-Medium", Arial, sans-serif; background-color: #079fd6; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
@@ -152,8 +154,6 @@ a { text-decoration: none; color: #ccc; }
  .footer__bottom { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
  .menu { display: none; }
-
- .mobile-menu { opacity: 1; }
 
  .menu-but { opacity: 1; top: 30px; } }
 @media only screen and (max-width: 650px) {

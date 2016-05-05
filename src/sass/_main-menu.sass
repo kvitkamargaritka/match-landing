@@ -56,11 +56,10 @@
   transition: all 0.4s
   opacity: 0
   z-index: 1
-  +r(900)
-    opacity: 1
 
 .mobile-menu
   li a
+    position: relative
     height: 77px
     box-sizing: border-box
     border-bottom: solid 1px #dadee6
@@ -86,7 +85,7 @@
         top: 50%
         margin-top: -4.5px
         right: 25px
-        background: url(../images/open-sub.png) no-repeat
+        background: url(../img/open-sub.png) no-repeat
         transition: all 0.3s
       &.show::before
         transform: rotateZ(180deg)
@@ -150,9 +149,13 @@
       -webkit-transform: rotateY(180deg)
       -moz-transform: rotateY(180deg)
     .close
-      background: url(../images/menu-close.jpg) no-repeat
+      background: url(../img/menu-close.jpg) no-repeat
       -webkit-backface-visibility: hidden
       backface-visibility: hidden
       transform: rotateY(0deg)
       -webkit-transform: rotateY(0deg)
       -moz-transform: rotateY(0deg)
+
+.mobile-menu.show
+  top: 78px
+  opacity: 1
